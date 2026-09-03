@@ -2,20 +2,61 @@
 .env
 *.env
 !.env.example
+*.local
+
+# Java & Maven (Backend)
+target/
+**/target/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+.mvn/timing.properties
+.mvn/.userSettings.xml
 
 # Python
 venv/
 .venv/
+env/
 __pycache__/
 *.py[cod]
+*$py.class
 .pytest_cache/
+.coverage
+htmlcov/
 
-# Node
+# Node & Frontend
 node_modules/
 dist/
+build/
+.next/
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# IDE / OS
+# IDE & Editor files
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+
+# Temporary & Log files
+*.tmp
+*.log
+*.bak

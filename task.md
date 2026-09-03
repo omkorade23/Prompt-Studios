@@ -1,0 +1,24 @@
+# Prompt Studio Frontend - Task List
+
+- `[x]` **Phase A: Foundation**
+  - `[x]` Initialize Vite + React (TypeScript) app in `frontend/`.
+  - `[x]` Configure `vite.config.ts` API proxy.
+  - `[x]` Extract Framer design tokens (colors, fonts, etc.) using browser inspection.
+  - `[x]` Implement `src/styles/global.css`.
+  - `[x]` Create centralized API client (`src/api/`).
+- `[x]` **Phase B: Landing Page & App Shell**
+  - `[x]` Setup React Router.
+  - `[x]` Implement AuthContext (Google Login + `/api/auth/me` restore).
+  - `[x]` Build Landing Page with smooth scrolling navbar.
+  - `[x]` Build Workspace Shell (Sidebar + Main Content).
+- `[x]` **Phase C: Chat Workflow**
+  - `[x]` Implement conversation list fetching & creation.
+  - `[x]` Implement message history fetching.
+  - `[x]` Implement message composer & sending.
+- `[x]` **Phase D: Prompt Library & Editor**
+  - `[x]` Build Prompt Library UI.
+  - `[x]` Build Prompt Editor UI (without faking backend persistence).
+- `[x]` **Verification**
+  - `[x]` Run frontend build & lint.
+  - `[x]` Run backend pytest suite.
+  - `[x]` Manual verification of auth, chat persistence, and routing.
