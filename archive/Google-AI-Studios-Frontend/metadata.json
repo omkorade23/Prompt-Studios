@@ -1,0 +1,6 @@
+{
+  "name": "Prompt Studio",
+  "description": "Create, improve, test, and evaluate prompts in one focused workspace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

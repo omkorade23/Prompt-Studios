@@ -19,7 +19,7 @@ def inspect_ppt(filename):
                 print(f"    Text: '{text[:100]}...'")
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        inspect_ppt(sys.argv[1])
-    else:
-        print("Provide filename")
+    import os
+    default_path = os.path.join(os.path.dirname(__file__), "..", "docs", "presentations", "Prompt_Studio_Mini_Project.pptx")
+    filename = sys.argv[1] if len(sys.argv) > 1 else default_path
+    inspect_ppt(filename)

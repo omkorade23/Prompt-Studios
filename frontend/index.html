@@ -1,77 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prompt Studio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="app-container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="sidebar-header">
-                <h2>Prompt Studio</h2>
-                <button id="new-chat-btn" class="primary-btn">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-                    New Chat
-                </button>
-            </div>
-            <div class="conversations-list" id="conversations-list">
-                <!-- Conversations will be loaded here -->
-            </div>
-            <div class="sidebar-footer">
-                <div class="user-profile" id="user-profile">
-                    <!-- User info will be loaded here -->
-                </div>
-            </div>
-        </aside>
-
-        <!-- Main Chat Area -->
-        <main class="chat-area">
-            <header class="chat-header">
-                <h3 id="current-chat-title">Select a conversation</h3>
-            </header>
-            
-            <div class="messages-container" id="messages-container">
-                <!-- Messages will be loaded here -->
-            </div>
-
-            <div class="input-area">
-                <div class="upload-preview" id="upload-preview" style="display: none;">
-                    <span id="upload-filename">filename.txt</span>
-                    <button id="remove-upload-btn" class="icon-btn">✕</button>
-                </div>
-                <div class="input-box-wrapper">
-                    <textarea id="message-input" placeholder="Message Prompt Studio..." rows="1"></textarea>
-                    
-                    <div class="input-actions">
-                        <input type="file" id="file-input" style="display: none;">
-                        <button id="upload-btn" class="icon-btn tooltip" data-tooltip="Upload Prompt (Mock UI)">
-                            📎
-                        </button>
-                        <button id="send-btn" class="icon-btn primary-icon" disabled>
-                            ➤
-                        </button>
-                    </div>
-                </div>
-                <div class="input-footer">
-                    Prompt Studio may produce inaccurate information.
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <!-- Dev Login Overlay -->
-    <div id="dev-login-overlay" class="overlay">
-        <div class="modal">
-            <h2>Welcome to Prompt Studio</h2>
-            <p>This is a local development environment.</p>
-            <button id="dev-login-btn" class="primary-btn">Login as Test User</button>
-        </div>
-    </div>
-
-    <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt Studio — Build Better Prompts. Get Better AI.</title>
+    <meta name="description" content="Create, improve, test, and evaluate prompts in one focused workspace." />
+    <meta property="og:title" content="Prompt Studio — Build Better Prompts. Get Better AI." />
+    <meta property="og:description" content="Create, improve, test, and evaluate prompts in one focused workspace." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
+

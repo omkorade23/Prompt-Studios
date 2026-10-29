@@ -30,7 +30,9 @@ def add_arrow(slide, left, top, width, height, is_down=True):
     return shape
 
 def process_ppt():
-    prs = pptx.Presentation("Mini Project PPT Sample.pptx")
+    import os
+    ppt_dir = os.path.join(os.path.dirname(__file__), "..", "docs", "presentations")
+    prs = pptx.Presentation(os.path.join(ppt_dir, "Mini Project PPT Sample.pptx"))
     
     # Slide 1: Title
     slide1 = prs.slides[0]
@@ -185,7 +187,7 @@ def process_ppt():
     slide18 = prs.slides[17]
     replace_text(slide18.shapes[1], " Gemini API Documentation\n Spring Boot & Hibernate Documentation\n White et al. (2023) - A Prompt Pattern Catalog")
 
-    prs.save("Prompt_Studio_Mini_Project.pptx")
+    prs.save(os.path.join(ppt_dir, "Prompt_Studio_Mini_Project.pptx"))
     print("Done generating PPT.")
 
 if __name__ == "__main__":
